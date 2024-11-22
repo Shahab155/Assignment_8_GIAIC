@@ -20,7 +20,16 @@ a {
 
 .gold-text {
   color: goldenrod;
+  animation: gold 10s linear infinite;
 }
+
+@keyframes gold{
+     0% {color:goldenrod ;}
+     33% {color: green}
+      65% {color: whitesmoke ;}
+     100% {color: goldenrod ;}
+        
+    }
 
 .menu-button {
   position: absolute;
@@ -310,7 +319,14 @@ label {
 /* -------------------------------------------------------- */
 /* ------------------ Map section ---------------- */
 /* -------------------------------------------------------- */
-
+.mapLine {
+  width: 80%;
+  height: 2px;
+  position: relative;
+  top:20px;
+  margin: 0 auto;
+  background-color: rgb(68, 67, 67);
+}
 .map-section {
     padding: 100px 10px;
 
