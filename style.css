@@ -28,6 +28,8 @@ a {
   right: 40px;
   font-size: 2em;
   display: none;
+  cursor: pointer;
+
 }
 
 /* -------------------------------------------- */
@@ -292,6 +294,7 @@ label {
   border: none;
   text-align: center;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .submitBtn input:hover {
@@ -345,7 +348,10 @@ label {
     top: 50px;
     left: 0;
     margin-top: -900px;
-    transition: all 1s ease-in-out;
+    transition: all 0.5s ease;
+
+    border-bottom-right-radius: 30px;
+
   }
 
   .showNavbar {
