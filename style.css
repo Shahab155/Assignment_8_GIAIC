@@ -243,12 +243,14 @@ iframe {
 
 .contact-section {
   width: 100%;
-  margin: 40px auto;
+  
+
 }
 
 .contact-section h1 {
   text-align: center;
   font-size: 7vmin;
+   padding-top: 40px;
 }
 
 .contact-section .line {
@@ -266,7 +268,7 @@ form {
   width: 350px;
   padding: 0 10px;
   box-shadow: 0px 0px 15px rgba(33, 33, 33, 0.9);
-
+background-color: white;
   border-radius: 10px;
 }
 
@@ -310,8 +312,10 @@ label {
 /* -------------------------------------------------------- */
 
 .map-section {
-  margin: 100px 0;
-  padding: 0 10px;
+    padding: 100px 10px;
+
+  
+
 }
 
 .map-section h1 {
