@@ -1,0 +1,377 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  overflow-x: hidden;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.gold-text {
+  color: goldenrod;
+}
+
+.menu-button {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  font-size: 2em;
+  display: none;
+}
+
+/* -------------------------------------------- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+
+  width: 100%;
+  color: whitesmoke;
+  background-color: rgb(8, 25, 50);
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-list li a {
+  padding: 0 30px;
+  font-size: 3vmin;
+  font-weight: 800;
+  color: whitesmoke;
+}
+
+.navbar h1 {
+  width: 100px;
+  padding: 0 15px;
+  font-size: 30px;
+}
+
+.nav-list li a:hover {
+  color: goldenrod;
+  text-decoration: underline;
+}
+
+/* ----------------------------------------------- */
+/* -------------- Footer Styling ----------- */
+/* ------------------------------------------------- */
+footer {
+  height: 150px;
+  width: 100%;
+  margin-top: 50px;
+  background-color: rgb(8, 25, 50);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.icons a {
+  font-size: 30px;
+}
+.fa-facebook {
+  color: rgb(24, 119, 242);
+}
+.fa-twitter {
+  color: rgb(24, 119, 242);
+}
+.fa-instagram {
+  color: rgb(252, 204, 99);
+}
+.fa-linkedin {
+  color: rgb(0, 119, 181);
+}
+
+.icons i:hover {
+  transform: scale(1.2);
+}
+
+/* --------------------------------------------------------------- */
+/* ------------------- Home section styling ------------ */
+/* ---------------------------------------------------------------- */
+.home-section {
+  width: 100%;
+}
+
+.home-image {
+  height: 70vh;
+  width: 100%;
+  background-image: url("./Images/bg.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.home-section p {
+  margin: 20px 20px;
+  font-size: 3vmin;
+  line-height: 25px;
+}
+
+/* --------------------------------------------------------------------------------------- */
+/*--------------------------------- about section ----------------------------------  */
+/* --------------------------------------------------------------------------------------- */
+
+.about-section {
+  width: 90%;
+  padding: 0 20px;
+  margin: 20px 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-content {
+  display: flex;
+}
+
+.about-section h1 {
+  font-size: 7vmin;
+  margin-top: 20px;
+}
+
+.about-section p {
+  font-size: 20px;
+}
+
+.profile-para {
+  line-height: 30px;
+}
+
+.profile-para2 {
+  margin-top: 40px;
+}
+
+.line {
+  margin-bottom: 20px;
+  height: 4px;
+  width: 80px;
+  border-radius: 5px;
+  background-color: rgb(131, 5, 5);
+}
+
+.ab-list li {
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+
+.iframe-piaic {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* --------------------------------------------------------------------------------------- */
+/*--------------------------------- Portfolio Section ----------------------------------  */
+/* --------------------------------------------------------------------------------------- */
+
+.portfolio-section {
+  width: 90%;
+  margin: 40px 0;
+}
+
+.portfolio-section h1 {
+  font-size: 7vmin;
+  text-align: center;
+}
+
+.portfolio-section .line {
+  width: 150px;
+  margin: 3px auto;
+  margin-bottom: 20px;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.portfolio-div {
+  width: 40%;
+  margin-top: 40px;
+  padding: 20px;
+  box-shadow: 0px 0px 5px rgb(79, 78, 78);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: all 1s ease;
+  border-radius: 10px;
+}
+.portfolio-div:hover {
+  background-color: rgb(8, 25, 50);
+  transform: scale(1.1);
+  color: whitesmoke;
+}
+
+.portfolio-div img {
+  width: 80%;
+}
+
+.portfolio-div p {
+  margin: 20px 0;
+  line-height: 22px;
+}
+
+/* --------------------------------------------------------------------------------------- */
+/* --------------------------------------- Contact Us --------------------------------- */
+/* ------------------------------------------------------------------------------------- */
+
+.contact-section {
+  width: 100%;
+  margin: 40px auto;
+}
+
+.contact-section h1 {
+  text-align: center;
+  font-size: 7vmin;
+}
+
+.contact-section .line {
+  margin: 3px auto;
+  margin-bottom: 20px;
+  width: 100px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+form {
+  width: 350px;
+  padding: 0 10px;
+  box-shadow: 0px 0px 15px rgba(33, 33, 33, 0.9);
+
+  border-radius: 10px;
+}
+
+input {
+  height: 30px;
+  margin-top: 5px;
+  padding: 0 3px;
+}
+
+textarea {
+  height: 100px;
+  margin-top: 5px;
+  border-radius: 5px;
+  padding: 3px 3px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0px;
+  color: black;
+}
+
+.submitBtn input {
+  margin: 10px auto;
+  padding: 5px 30px;
+  border-radius: 5px;
+  background-color: rgb(27, 27, 27);
+  color: whitesmoke;
+  border: none;
+  text-align: center;
+  font-weight: bold;
+}
+
+.submitBtn input:hover {
+  border: 2px solid goldenrod;
+}
+/* -------------------------------------------------------- */
+/* ------------------ Map section ---------------- */
+/* -------------------------------------------------------- */
+
+.map-section {
+  margin: 100px 0;
+  padding: 0 10px;
+}
+
+.map-section h1 {
+  font-size: 7vmin;
+  text-align: center;
+  /* margin-bottom: 20px; */
+}
+
+.map-section .line {
+  margin: 3px auto;
+  margin-bottom: 20px;
+  width: 80px;
+}
+
+/* ------------------------------------------------------------------------------------------- */
+/* ----------------------------- Media Queries ----------------------- */
+/* -------------------------------------------------------------------------------------------- */
+
+@media (max-width: 786px) {
+  /* ------------- Navbar --------------- */
+
+  .menu-button {
+    display: flex;
+  }
+
+  .logo {
+    z-index: 10;
+  }
+
+  .nav-list {
+    width: 100%;
+    height: 50vh;
+    background-color: rgb(8, 25, 50);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    margin-top: -900px;
+    transition: all 1s ease-in-out;
+  }
+
+  .showNavbar {
+    margin-top: 0px;
+  }
+
+  .nav-list li {
+    padding: 10px;
+  }
+
+  /* ---------- About section -------------- */
+  .about-content {
+    flex-direction: column;
+  }
+  .about-content img {
+    margin: 30px 0 0 0;
+  }
+  .ab-list li {
+    font-size: 16px;
+  }
+  /* -------------- Portfoilio section  ------------ */
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .portfolio-div {
+    width: 80%;
+  }
+}
