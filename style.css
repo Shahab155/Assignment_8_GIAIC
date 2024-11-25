@@ -390,11 +390,13 @@ label {
 
   /* ---------- About section -------------- */
   .about-content {
-    flex-direction: column;
+    flex-direction: column-reverse;
+
   }
   .about-content img {
-    margin: 30px 0 0 0;
+    margin: 30px 0;
   }
+
   .ab-list li {
     font-size: 16px;
   }
