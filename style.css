@@ -23,13 +23,20 @@ a {
   animation: gold 10s linear infinite;
 }
 
-@keyframes gold{
-     0% {color:goldenrod ;}
-     33% {color: green}
-      65% {color: whitesmoke ;}
-     100% {color: goldenrod ;}
-        
-    }
+@keyframes gold {
+  0% {
+    color: goldenrod;
+  }
+  33% {
+    color: green;
+  }
+  65% {
+    color: whitesmoke;
+  }
+  100% {
+    color: goldenrod;
+  }
+}
 
 .menu-button {
   position: absolute;
@@ -38,7 +45,6 @@ a {
   font-size: 2em;
   display: none;
   cursor: pointer;
-
 }
 
 /* -------------------------------------------- */
@@ -132,11 +138,12 @@ footer {
 
 .home-section p {
   margin: 20px 20px;
-  font-size: 3vmin;
-  line-height: 25px;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 2%;
 }
 
-/* --------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------- */
 /*--------------------------------- about section ----------------------------------  */
 /* --------------------------------------------------------------------------------------- */
 
@@ -158,16 +165,19 @@ footer {
 }
 
 .about-section p {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .profile-para {
-  line-height: 30px;
+  line-height: 32px;
 }
 
 .profile-para2 {
+  font-size: 18px;
   margin-top: 40px;
-}
+  margin-bottom: 20px;
+  line-height:30px;
+} 
 
 .line {
   margin-bottom: 20px;
@@ -185,7 +195,6 @@ footer {
 .iframe-piaic {
   text-align: center;
   margin-top: 20px;
-  
 }
 
 iframe {
@@ -197,8 +206,11 @@ iframe {
 /* --------------------------------------------------------------------------------------- */
 
 .portfolio-section {
-  width: 90%;
   margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+align-items: center;
+
 }
 
 .portfolio-section h1 {
@@ -213,7 +225,7 @@ iframe {
 }
 
 .container {
-  width: 100%;
+  width: 1050px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -252,14 +264,12 @@ iframe {
 
 .contact-section {
   width: 100%;
-  
-
 }
 
 .contact-section h1 {
   text-align: center;
   font-size: 7vmin;
-   padding-top: 40px;
+  padding-top: 40px;
 }
 
 .contact-section .line {
@@ -277,7 +287,7 @@ form {
   width: 350px;
   padding: 0 10px;
   box-shadow: 0px 0px 15px rgba(33, 33, 33, 0.9);
-background-color: white;
+  background-color: white;
   border-radius: 10px;
 }
 
@@ -323,15 +333,12 @@ label {
   width: 80%;
   height: 2px;
   position: relative;
-  top:20px;
+  top: 20px;
   margin: 0 auto;
   background-color: rgb(68, 67, 67);
 }
 .map-section {
-    padding: 100px 10px;
-
-  
-
+  padding: 100px 10px;
 }
 
 .map-section h1 {
@@ -357,7 +364,6 @@ label {
     display: flex;
   }
 
-  
   .logo {
     z-index: 10;
   }
@@ -377,7 +383,6 @@ label {
     transition: all 0.5s ease;
 
     border-bottom-right-radius: 30px;
-
   }
 
   .showNavbar {
@@ -391,7 +396,9 @@ label {
   /* ---------- About section -------------- */
   .about-content {
     flex-direction: column-reverse;
-
+  }
+  .about-section h1 {
+    font-size: 7vmin;
   }
   .about-content img {
     margin: 30px 0;
@@ -402,10 +409,29 @@ label {
   }
   /* -------------- Portfoilio section  ------------ */
   .container {
+    width: 90%;
     flex-direction: column;
     align-items: center;
   }
   .portfolio-div {
-    width: 80%;
+    width: 90%;
+  }
+}
+/* ------------------- max-width 500px */
+@media (max-width: 500px) {
+  .about-section h1 {
+    font-size: 40px;
+  }
+  .contact-section h1 {
+    font-size: 40px;
+  }
+
+  .portfolio-section h1 {
+    font-size: 40px;
+  }
+
+  .map-section h1 {
+    font-size: 40px;
+
   }
 }
